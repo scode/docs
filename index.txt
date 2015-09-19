@@ -1,0 +1,5 @@
+Hopefully useful documentation about random stuff:
+
+  * link:chrome_remote_desktop_ubuntu[Setting up Chrome Remote Desktop on Ubuntu]
+
+Feel free to submit pull requests on http://github.com/scode/docs[github].
