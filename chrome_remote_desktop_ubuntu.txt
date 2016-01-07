@@ -10,10 +10,6 @@ The two main sources of information I found are:
   * An old product forum post: https://productforums.google.com/forum/#!topic/chrome/8PMxG69VJ6o
   * This documentation (under "Enable remote access to your computer"): https://support.google.com/chrome/answer/1649523?hl=en
 
-At the time of this writing, this was written retroactively and I have
-not done a full run of the instructions from scratch. There may be
-mistakes.
-
 == Overview of how remote-desktop works
 
 The Linux version of chrome remote desktop (henceforth, CRD) doesn't
@@ -28,9 +24,8 @@ Chrome (until someone or Google makes a tool that generates the
 necessary on-disk state in your home directory for authorizing remote
 access).
 
-Once set up however, CRD is completely headless. It starts on boot-up
-as a service, and can be restarted, through an init script. For
-example:
+Once set up however, CRD is completely headless and is controlled
+using an init script. For example:
 
   sudo /etc/init.d/chrome-remote-desktop restart
 
@@ -53,7 +48,11 @@ Mostly:
 
 === Install the package
 
-Download the package linked from https://support.google.com/chrome/answer/1649523?hl=en
+Download the package linked from
+https://support.google.com/chrome/answer/1649523?hl=en and install it:
+
+  sudo dpkg -i chrome-remote-desktop_current_amd64.deb
+  sudo apt-get -f install
 
 === Prepare the chrome-remote-desktop group
 
@@ -77,6 +76,8 @@ without a clear cause. Example:
 
   xterm &
   exec i3
+
+Unconfirmed whether chmod +x is needed.
 
 === Set up your desired resolution in your shell profile
 
@@ -102,3 +103,13 @@ forwarding. I.e:
   ssh -L 5901:localhost:5901 username@remotehost
 
 And run your preferred VNC client to connect to localhost:5901.
+
+=== Enable remote connections in Chrome
+
+Start Chrome, install the "Chrome Remote Desktop" app, run it. Under
+"My Computers", hit "Enable remote connecftions".
+
+Hopefully it should succeed. After this, the session will
+automatically start on boot thanks to the init script, and chrome will
+have directly launched a session for you just now - so you should now
+be able to connect through a CRD client.
