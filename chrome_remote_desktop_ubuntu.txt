@@ -25,7 +25,7 @@ in-progress session.
 
 Initial setup still requires a non-headless environment: A running
 Chrome (until someone or Google makes a tool that generates the
-necessary on-disk state in your home directory for authorizing remoite
+necessary on-disk state in your home directory for authorizing remote
 access).
 
 Once set up however, CRD is completely headless. It starts on boot-up
@@ -74,7 +74,7 @@ information, the attempt to connect to the remote desktop will fail
 without a clear cause. Example:
 
   #!/bin/bash
-  
+
   xterm &
   exec i3
 
@@ -91,9 +91,9 @@ On the server:
   sudo apt-get install vnc4server
   vncpasswd
   vncserver
-  
+
   # log in remotely and bootstrap chrome (see later)
-  
+
   vncserver -kill :1
 
 On the client, log into the server using a VNC client over SSH
