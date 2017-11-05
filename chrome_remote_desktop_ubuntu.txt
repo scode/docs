@@ -1,4 +1,8 @@
 = Setting up Chrome Remote Desktop on Ubuntu
+
+This was written in September of 2015. Not sure whether it still
+applies.
+
 :toc:
 
 The upstream documentation is a little bit scattered, not always
@@ -41,8 +45,9 @@ Mostly:
     CTRL-N from opening a new local window).
   * It seems faster than any other remote desktop option I have tried. I don't know
     technical details, but likely their use of some kind of modified VP9 codec
-    has to do with this (but fear not: as far as I can tell, reproduction is pixel
-    perfect and not lossy).
+    has to do with this. When originally writing this I thought it was lossy and pixel
+    perfect nonetheless, but I've been informed it's not. At least it was good enough
+    to fool me :)
 
 == Setup instructions
 
@@ -107,7 +112,7 @@ And run your preferred VNC client to connect to localhost:5901.
 === Enable remote connections in Chrome
 
 Start Chrome, install the "Chrome Remote Desktop" app, run it. Under
-"My Computers", hit "Enable remote connecftions".
+"My Computers", hit "Enable remote connections".
 
 Hopefully it should succeed. After this, the session will
 automatically start on boot thanks to the init script, and chrome will
