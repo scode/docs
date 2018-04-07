@@ -281,6 +281,12 @@ But, I mention this just in case the reader may anticipate any
 problems resulting from the fact that there are multiple batteries
 exposed logically through ACPI.
 
+Accelerated video decoding
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Accelerated decoding in Chrome is disabled. I was not able to find a
+fix.
+
 Misc tweaks
 ^^^^^^^^^^^
 
