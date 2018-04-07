@@ -1,9 +1,8 @@
-= Setting up Chrome Remote Desktop on Ubuntu
+Setting up Chrome Remote Desktop on Ubuntu
+==========================================
 
 This was written in September of 2015. Not sure whether it still
 applies.
-
-:toc:
 
 The upstream documentation is a little bit scattered, not always
 entirely complete, and the Ubuntu package provided needs some poking
@@ -14,7 +13,8 @@ The two main sources of information I found are:
   * An old product forum post: https://productforums.google.com/forum/#!topic/chrome/8PMxG69VJ6o
   * This documentation (under "Enable remote access to your computer"): https://support.google.com/chrome/answer/1649523?hl=en
 
-== Overview of how remote-desktop works
+Overview of how remote-desktop works
+------------------------------------
 
 The Linux version of chrome remote desktop (henceforth, CRD) doesn't
 allow clients to connect and control an existing X session; rather,
@@ -34,65 +34,73 @@ using an init script. For example:
   sudo /etc/init.d/chrome-remote-desktop restart
 
 It determines which users should have CRD running based on which users
-are part of the `chrome-remote-desktop` Unix group.
+are part of the ``chrome-remote-desktop`` Unix group.
 
-== Why Chrome Remote Desktop instead of `$OTHER_OPTION`?
+Why Chrome Remote Desktop instead of ``$OTHER_OPTION``?
+-------------------------------------------------------
 
 Mostly:
 
-  * It works natively on ChromeOS, and works well. It handles hi-dpi displays
-    correctly, and passes through keyboard combinations correctly (e.g., it stops
-    CTRL-N from opening a new local window).
-  * It seems faster than any other remote desktop option I have tried. I don't know
-    technical details, but likely their use of some kind of modified VP9 codec
-    has to do with this. When originally writing this I thought it was lossy and pixel
-    perfect nonetheless, but I've been informed it's not. At least it was good enough
-    to fool me :)
+* It works natively on ChromeOS, and works well. It handles hi-dpi displays
+  correctly, and passes through keyboard combinations correctly (e.g., it stops
+  CTRL-N from opening a new local window).
 
-== Setup instructions
+* It seems faster than any other remote desktop option I have tried. I don't know
+  technical details, but likely their use of some kind of modified VP9 codec
+  has to do with this. When originally writing this I thought it was lossy and pixel
+  perfect nonetheless, but I've been informed it's not. At least it was good enough
+  to fool me :)
 
-=== Install the package
+Setup instructions
+------------------
+
+Install the package
+^^^^^^^^^^^^^^^^^^^
 
 Download the package linked from
-https://support.google.com/chrome/answer/1649523?hl=en and install it:
+https://support.google.com/chrome/answer/1649523?hl=en and install it::
 
   sudo dpkg -i chrome-remote-desktop_current_amd64.deb
   sudo apt-get -f install
 
-=== Prepare the chrome-remote-desktop group
+Prepare the chrome-remote-desktop group
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 At the time of this writing, the package installer seems to fail to
-create the `chrome-remote-desktop` group, so add it:
+create the ``chrome-remote-desktop`` group, so add it::
 
   sudo groupadd chrome-remote-desktop
 
 You _may_ need to add yourself to the group (unclear if this happens
-correctly automatically):
+correctly automatically)::
 
   sudo usermod -a -G chrome-remote-desktop $USER
 
-=== Set up the desktop session
+Set up the desktop session
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If `~/.chrome-remote-desktop-session` is missing or containing bad
+If ``~/.chrome-remote-desktop-session`` is missing or contains bad
 information, the attempt to connect to the remote desktop will fail
-without a clear cause. Example:
+without a clear cause. Example::
 
   #!/bin/bash
 
   xterm &
   exec i3
 
-Unconfirmed whether chmod +x is needed.
+Unconfirmed whether ``chmod +x`` is needed.
 
-=== Set up your desired resolution in your shell profile
+Set up your desired resolution in your shell profile
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wherever your shell profile is, add an appropriate resolution selection:
+Wherever your shell profile is, add an appropriate resolution selection::
 
   export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES=1024x768
 
-=== Bootstrap through SSH+VNC
+Bootstrap through SSH+VNC
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-On the server:
+On the server::
 
   sudo apt-get install vnc4server
   vncpasswd
@@ -103,13 +111,14 @@ On the server:
   vncserver -kill :1
 
 On the client, log into the server using a VNC client over SSH
-forwarding. I.e:
+forwarding. I.e::
 
   ssh -L 5901:localhost:5901 username@remotehost
 
-And run your preferred VNC client to connect to localhost:5901.
+And run your preferred VNC client to connect to ``localhost:5901``.
 
-=== Enable remote connections in Chrome
+Enable remote connections in Chrome
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Start Chrome, install the "Chrome Remote Desktop" app, run it. Under
 "My Computers", hit "Enable remote connections".
