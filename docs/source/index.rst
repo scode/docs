@@ -1,20 +1,11 @@
-.. scode/docs documentation master file, created by
-   sphinx-quickstart on Sat Apr  7 10:34:20 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Welcome to scode/docs
+=====================
 
-Welcome to scode/docs's documentation!
-======================================
+Random things that `scode <https://github.com/scode/>`__ wanted to document.
+
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    chrome_remote_desktop_ubuntu
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
