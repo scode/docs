@@ -293,4 +293,7 @@ my `i3 config
 my `keyboard layout
 <https://github.com/scode/dotfiles/tree/master/dotfiles/xkb>`__ and my
 `backlight script
-<https://github.com/scode/dotfiles/blob/master/scode-overlay/backlight.py>`__.
+<https://github.com/scode/dotfiles/blob/master/scode-overlay/backlight.py>`__
+(note: requires permissions to write to
+``/sys/class/backlight/intel_backlight/brightness`` which needs
+automation to surfive across reboots).
