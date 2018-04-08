@@ -287,6 +287,14 @@ Accelerated video decoding
 Accelerated decoding in Chrome is disabled. I was not able to find a
 fix.
 
+The webcam
+^^^^^^^^^^
+
+It may not work. Tried it exactly once, with hangouts, and I got
+mostly greenish garbage with a shadow of a real picture. Have spent no
+time investigating. Do not know if the webcam works in Windows or
+whether it's possible I have a bad webcam.
+
 Misc tweaks
 ^^^^^^^^^^^
 
