@@ -16,6 +16,10 @@ Changelog (significant updates only)
 
   * Initial version, about 3 weeks or so after receiving the laptop.
 
+* 2018-0408
+
+  * More information about the webcam.
+
 The touchpad
 ------------
 
@@ -290,10 +294,10 @@ fix.
 The webcam
 ^^^^^^^^^^
 
-It may not work. Tried it exactly once, with hangouts, and I got
-mostly greenish garbage with a shadow of a real picture. Have spent no
-time investigating. Do not know if the webcam works in Windows or
-whether it's possible I have a bad webcam.
+* Chrome appears to use the *infrafed* camera by default (it shows up
+  as /dev/video0) (this results in an almost entirely green picture)
+
+* A quick ffmpeg capture indicates the regluar webcam does work.
 
 Misc tweaks
 ^^^^^^^^^^^
