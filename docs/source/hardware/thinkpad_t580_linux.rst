@@ -294,10 +294,15 @@ fix.
 The webcam
 ^^^^^^^^^^
 
-* Chrome appears to use the *infrafed* camera by default (it shows up
-  as /dev/video0) (this results in an almost entirely green picture)
+Very limited testing indicates the webcam works.
 
-* A quick ffmpeg capture indicates the regluar webcam does work.
+One caveat is that Chrome appears to use the *infrafed* camera by
+default (it shows up as ``/dev/video0`` with the visible light camera
+being ``/dev/video1``). If video capture results in a bunch of green
+garbage this is likely what's going on. Chrome's setting for selecting
+video device is under "advanced" settings, and under "content"
+settings.  You pick the device in the same place you managed
+permissions to use the camera.
 
 Misc tweaks
 ^^^^^^^^^^^
