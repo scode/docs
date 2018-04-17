@@ -2,7 +2,7 @@
 #
 
 # You can set these variables from the command line.
-SPHINXOPTS    =
+SPHINXOPTS    = -n -W -v
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = scodedocs
 SOURCEDIR     = docs/source
