@@ -212,7 +212,7 @@ and `bullet lists
 <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#bullet-lists>`__
 in the spec.
 
-.. rst-cross-references:
+.. _rst-cross-references:
 
 Cross reference best practices
 ------------------------------
