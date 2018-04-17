@@ -106,7 +106,7 @@ therefor use this form instead (which appears Sphinx specific):
 
     .. code-block:: python
 
-        print('Hello world'!)
+        print('Hello world!')
 
     In the above example, we ...
 
