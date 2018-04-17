@@ -298,7 +298,7 @@ referencing the footnote. This is required.
 For more information, see `footnotes
 <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#footnotes>`__
 in the rst spec, and the `basics
-<http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`
+<http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`__
 in the sphinx docs.
 
 Semi-automated conversion from markdown to rst
