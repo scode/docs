@@ -40,7 +40,7 @@ frustration.
 Suggestions/feedback? Feel free to `file a github issue
 <https://github.com/scode/docs/issues>`__, open a pull request `on
 github <https://github.com/scode/docs>`__, or just `email me
-<mailto:peter.schuller@infidyne.com>`__.`
+<mailto:peter.schuller@infidyne.com>`__.
 
 Inline literals
 ---------------
@@ -103,7 +103,7 @@ of the spec for more.
 The biggest disadvantage of the form is that it does not allow you to
 specify the language contained in the block of text - which you may
 want to do, for example to enable syntax highlighting. You may
-therefor use this form instead (which appears Sphinx specific):
+therefor use this form instead (which appears to be Sphinx specific):
 
 .. code-block:: rst
 
