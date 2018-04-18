@@ -39,8 +39,14 @@ frustration.
 
 Suggestions/feedback? Feel free to `file a github issue
 <https://github.com/scode/docs/issues>`__, open a pull request `on
-github <https://github.com/scode/docs>`__, or just `email me
-<mailto:peter.schuller@infidyne.com>`__.
+github <https://github.com/scode/docs>`__, or just email me at
+``peter.schuller@infidyne.com`` [#email-not-link]_.
+
+.. [#email-not-link] This would be a link, except I have not been able
+                     to figure out how to make a ``mailto:`` link in
+                     which the ``@`` sign is not URL encoded in the
+                     output. Know how to fix that? I'll add it to
+                     this guide :)
 
 Inline literals
 ---------------
