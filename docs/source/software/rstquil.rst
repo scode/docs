@@ -225,7 +225,7 @@ also support for cross references across projects through `intersphinx
 have not used it so am not covering it here).
 
 Let's assume we have a document with a section on eating apples, and
-it has a label defined (``eating-apples``):
+it has a label defined (``eating-apples``) for the section:
 
 .. code-block:: rst
 
@@ -261,11 +261,14 @@ label based on their name, but the problem with using those include:
   the file containing that section, that someone may be linking to the label.
 
 For this reason, I strongly recommend always explicitly labeling
-sections. When editing existing documentation, you should also assume
-that explicit labels may be linked to and take care to preserve them.
+sections when you decide to link to them. When editing existing
+documentation, you should also assume that explicit labels may be
+linked to and take care to preserve them. It's an indicator that
+someone cared about it enough to put a label there, and there's
+probably a link to it somewhere.
 
 (The previous guidance will obviously not work if you don't have the
-ability to modify the documentation you're linking *too*. I don't know
+ability to modify the documentation you're linking *to*. I don't know
 if there's a solution to that problem.)
 
 Though I mentioned sections above, labels can be used anywhere and not
