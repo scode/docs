@@ -258,7 +258,7 @@ mind.
   again and *then* connect after an additional couple of seconds.
 
   I have had a few cases that required more attempts. Once I spent
-  almost 5 seconds restarting the headset, flipping ``scan on/scan
+  almost 5 minutes restarting the headset, flipping ``scan on/scan
   off`` and doing suspend/resumes until it finally started working.
 
   So TLDR: As usual, Bluetooth pairing/connection is freaking
