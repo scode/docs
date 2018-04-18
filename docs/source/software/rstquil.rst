@@ -37,6 +37,11 @@ documentation. Rather, it's selectively picking a few topics that I
 believe to be extra important and/or extra likely to cause
 frustration.
 
+Suggestions/feedback? Feel free to `file a github issue
+<https://github.com/scode/docs/issues>`__, open a pull request `on
+github <https://github.com/scode/docs>`__, or just `email me
+<mailto:peter.schuller@infidyne.com>`__.`
+
 Inline literals
 ---------------
 
