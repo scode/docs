@@ -47,7 +47,7 @@ Use *double* backticks:
    Let me tell you about the ``cool_function`` function!
 
 A single backtick, like you're used to, may superficially appear to do
-what you want based on redendered output, but *actually* is for
+what you want based on rendered output, but *actually* is for
 `interpreted text
 <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#interpreted-text>`__
 which is different.
@@ -189,7 +189,7 @@ markup. The example below illustrates.
 
     #. Bar
 
-Bulleted lists are exactly the same in terms of indentaiton and such,
+Bulleted lists are exactly the same in terms of indentation and such,
 but use ``*`` (and others) instead of hashes:
 
 
@@ -307,7 +307,7 @@ in the sphinx docs.
 Semi-automated conversion from markdown to rst
 ----------------------------------------------
 
-I've found `pandoc <https://pandoc.org/>`__ to be quite uesful. It
+I've found `pandoc <https://pandoc.org/>`__ to be quite useful. It
 will *not* be perfect, but it will take care of most of the simple
 stuff and after the automated conversion you go through and perform
 manual fix-ups. Once you've got it installed:
