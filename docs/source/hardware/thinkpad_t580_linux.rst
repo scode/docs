@@ -12,13 +12,18 @@ the Intel graphics (on purpose for Linux compatibility).
 Changelog (significant updates only)
 ------------------------------------
 
+* 2018-07-15
+
+  * Added more comments on my experience with the trackpoint.
+
+* 2018-04-08
+
+  * More information about the webcam.
+
 * 2018-04-07
 
   * Initial version, about 3 weeks or so after receiving the laptop.
 
-* 2018-0408
-
-  * More information about the webcam.
 
 The touchpad
 ------------
@@ -48,16 +53,15 @@ the trackpoint.
 TrackPoint
 ----------
 
-It's a trackpoint :) The only thing I'll say is that I'm not a
-traditional trackpoint user and after several weeks of use, I'm "used"
-to it in the sense that I automatically use it without having to think
-about it. However, at this point I'm not feeling nearly as
-quick/effective/painless as a MacBook touchpad.
+I only use the trackpoint on this laptop, because the touchpad is
+unfortunately nowhere good enough for my taste. I got used to it
+pretty quickly, but even after a few months I am a lot slower with it
+than a MacBook touchpad and I find myself feeling restricted by it and
+I find myself really wishing I had something better. In fact I'm
+considerng getting an external keyboard/monitor for this reason.
 
-(If I remember I will update this in the future after more prolonged
-use.)
-
-Of course this is obviusly highly subjective.
+This is obviously highly subjective and some people really like using
+the TrackPoint.
 
 
 The fact that the keyboard/touchpad isn't centered
