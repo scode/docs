@@ -24,8 +24,8 @@ JVM garbage collection
   generation and it's a copying and compacting collector.
 
 
-* Optional: These two apply to Azul's garbage collector which AFAIK
-  has never been freely available without lots of $$$.
+* Azul collectors (these apply to Azul's JVM which AFAIK
+  has never been freely available).
 
   * `The Pauseless GC Algorithm
     <https://www.usenix.org/legacy/events/vee05/full_papers/p46-click.pdf>`__
