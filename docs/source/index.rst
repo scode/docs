@@ -10,3 +10,4 @@ Random things that `scode <https://github.com/scode/>`__ wanted to document.
 
    hardware/index
    software/index
+   reading/index
