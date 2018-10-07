@@ -5,12 +5,16 @@ ThinkPad T580 impressions (with Linux)
           These are various impressions after using it and is not intended to be a complete review. In
           particular, don't assume something works for me if I didn't specifically spell it out.
 
-The following impressions are based on running Ubuntu 17.10 a
+The following impressions are based on running Ubuntu on a
 dual-battery T580 with Xorg and i3. The T580 only has
 the Intel graphics (on purpose for Linux compatibility).
 
 Changelog (significant updates only)
 ------------------------------------
+
+* 2018-10-07
+
+  * Noted upgrading to Ubuntu 18.04.
 
 * 2018-07-15
 
@@ -24,6 +28,14 @@ Changelog (significant updates only)
 
   * Initial version, about 3 weeks or so after receiving the laptop.
 
+
+Ubuntu compatibility
+--------------------
+
+This was originally written based on experience using Unbutu 17.10. As
+of 2018-10-07 I have upgraded to upgraded to Ubuntu 18.04 and preliminarily
+everything seems to work comparably. I tried booting the 18.04 live USB, but
+I have not performed an installation of 18.04 from scratch.
 
 The touchpad
 ------------
