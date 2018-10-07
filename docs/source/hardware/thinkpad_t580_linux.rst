@@ -65,16 +65,24 @@ the trackpoint.
 TrackPoint
 ----------
 
-I only use the trackpoint on this laptop, because the touchpad is
-unfortunately nowhere good enough for my taste. I got used to it
-pretty quickly, but even after a few months I am a lot slower with it
-than a MacBook touchpad and I find myself feeling restricted by it and
-I find myself really wishing I had something better. In fact I'm
-considerng getting an external keyboard/monitor for this reason.
+As mentioned above, the touchpad is not really to my taste. Therefore, I
+used the trackpoint exclusively for the first few months of use.
 
-This is obviously highly subjective and some people really like using
-the TrackPoint.
+I *did* get "used" to it in the sense that usage was natural to me. However,
+I never became anywhere near as fast as I am with a Macbook Touchpad, and I
+never shook the feeling of being "restricted" and uncomfortable when needing
+to do something pointer heavy.
 
+As a result I decided to get an external mouse and keyboard + the docking
+station which I now use whenever I'm at my desk. I still use the TrackPoint
+regularly and it remains servicable if not pleasant.
+
+This topic is of course highly subjective and I know many people love
+trackpoints. But the above is my experience, and figured I would share it.
+
+(As an aside, the `CODE 87-Key Cherry MX Brown
+<https://smile.amazon.com/gp/product/B00UUBIM0E/ref=oh_aui_search_detailpage?ie=UTF8&psc=1>`__
+has been a great keyboard for me. Note there are variants with other Cherry MX switches.)
 
 The fact that the keyboard/touchpad isn't centered
 --------------------------------------------------
