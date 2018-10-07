@@ -47,7 +47,7 @@ amonunt of force (and it differentiates between the left/right side to
 simulate left/right mouse buttons).
 
 The further up the touchpad you go, the harder you need to press to
-generate a click. The implicdation is that as you move your hand
+generate a click. The implication is that as you move your hand
 around while moving the cursor, it's a crapshoot as to what it feels
 like to click the touchpad - and if you're far up enough you end up
 with a lot of "ugh the click didn't take" situations.
