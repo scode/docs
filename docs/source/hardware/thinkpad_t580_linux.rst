@@ -83,7 +83,9 @@ trackpoints. But the above is my experience, and figured I would share it.
 
 (As an aside, the `CODE 87-Key Cherry MX Brown
 <https://smile.amazon.com/gp/product/B00UUBIM0E/ref=oh_aui_search_detailpage?ie=UTF8&psc=1>`__
-has been a great keyboard for me. Note there are variants with other Cherry MX switches.)
+has been a great keyboard for me. Note there are variants with other Cherry MX switches.
+Also for some reason it is currently listed with an insanely high price - not sure
+why; it was $145 when I got it).
 
 The fact that the keyboard/touchpad isn't centered
 --------------------------------------------------
