@@ -15,6 +15,7 @@ Changelog (significant updates only)
 * 2018-10-07
 
   * Noted upgrading to Ubuntu 18.04.
+  * Updated trackpoint section with decision to use external kb/mouse.
 
 * 2018-07-15
 
