@@ -12,6 +12,10 @@ the Intel graphics (on purpose for Linux compatibility).
 Changelog (significant updates only)
 ------------------------------------
 
+* 2019-11-09
+
+  * Added note around resume not working w/ external mouse.
+
 * 2018-10-07
 
   * Noted upgrading to Ubuntu 18.04.
@@ -232,8 +236,12 @@ replacement - I just don't know yet.
 Suspend/resume
 ^^^^^^^^^^^^^^
 
-I have had zero issues and have had to do zero tweaking. It appears to
-"just work". Resume seems to take maybe 2-3 seconds or so.
+I have one problem with suspend/resume: If I suspend the laptop while
+an external mouse (USB) is connected, it won't resume again and I have
+to reset it. I have not done any debugging of the issue.
+
+Outside of that, suspend/resume has been fully reliable. Resume seems
+to take maybe 2-3 seconds or so.
 
 Bluetooth audio
 ^^^^^^^^^^^^^^^
