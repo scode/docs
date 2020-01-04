@@ -1,9 +1,12 @@
 Setting up Chrome Remote Desktop on Ubuntu
 ==========================================
 
-.. NOTE:: I have been informed of `this askubuntu question <https://askubuntu.com/questions/795703>`__
+.. NOTE:: I have been informed of two other solutions. Most recently,
+	  `this comment <https://aur.archlinux.org/packages/chrome-remote-desktop/#comment-719586>`__ appears
+	  to describe a better process more directly supported by Google. In the past I was also pointed to
+          `this askubuntu question <https://askubuntu.com/questions/795703>`__
           which appears to have a better (shorter, headless) solution than what I describe here. I
-          have not personally tested it, but it may be a better place to start than this.
+          have not personally tested either of these, but I recommend starting there.
 
 This was written in September of 2015. Not sure whether it still
 applies.
