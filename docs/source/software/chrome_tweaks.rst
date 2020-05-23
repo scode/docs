@@ -4,6 +4,8 @@ Chrome tweaks
 More aggressive relaunch prompting for updates
 ----------------------------------------------
 
+(unclear if this actually works)
+
 TLDR::
 
     defaults write com.google.Chrome RelaunchNotification -int 1
