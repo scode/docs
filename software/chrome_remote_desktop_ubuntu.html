@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting up Chrome Remote Desktop on Ubuntu &#8212; scode/docs  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chrome tweaks" href="chrome_tweaks.html" />
+    <link rel="prev" title="Software" href="index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="setting-up-chrome-remote-desktop-on-ubuntu">
+<h1>Setting up Chrome Remote Desktop on Ubuntu<a class="headerlink" href="#setting-up-chrome-remote-desktop-on-ubuntu" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I have been informed of two other solutions. Most recently,
+<a class="reference external" href="https://aur.archlinux.org/packages/chrome-remote-desktop/#comment-719586">this comment</a> appears
+to describe a better process more directly supported by Google. In the past I was also pointed to
+<a class="reference external" href="https://askubuntu.com/questions/795703">this askubuntu question</a>
+which appears to have a better (shorter, headless) solution than what I describe here. I
+have not personally tested either of these, but I recommend starting there.</p>
+</div>
+<p>This was written in September of 2015. Not sure whether it still
+applies.</p>
+<p>The upstream documentation is a little bit scattered, not always
+entirely complete, and the Ubuntu package provided needs some poking
+to work. Hence this summary.</p>
+<p>The two main sources of information I found are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>An old product forum post: <a class="reference external" href="https://productforums.google.com/forum/#!topic/chrome/8PMxG69VJ6o">https://productforums.google.com/forum/#!topic/chrome/8PMxG69VJ6o</a></p></li>
+<li><p>This documentation (under “Enable remote access to your computer”): <a class="reference external" href="https://support.google.com/chrome/answer/1649523?hl=en">https://support.google.com/chrome/answer/1649523?hl=en</a></p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="overview-of-how-remote-desktop-works">
+<h2>Overview of how remote-desktop works<a class="headerlink" href="#overview-of-how-remote-desktop-works" title="Permalink to this headline">¶</a></h2>
+<p>The Linux version of chrome remote desktop (henceforth, CRD) doesn’t
+allow clients to connect and control an existing X session; rather,
+there is a dedicated X session specific to CRD. This is similar to the
+classic vncserver mechanic. When you connect, a session is started if
+one is not already running. If it is running, you are connected to the
+in-progress session.</p>
+<p>Initial setup still requires a non-headless environment: A running
+Chrome (until someone or Google makes a tool that generates the
+necessary on-disk state in your home directory for authorizing remote
+access).</p>
+<p>Once set up however, CRD is completely headless and is controlled
+using an init script. For example:</p>
+<blockquote>
+<div><p>sudo /etc/init.d/chrome-remote-desktop restart</p>
+</div></blockquote>
+<p>It determines which users should have CRD running based on which users
+are part of the <code class="docutils literal notranslate"><span class="pre">chrome-remote-desktop</span></code> Unix group.</p>
+</div>
+<div class="section" id="why-chrome-remote-desktop-instead-of-other-option">
+<h2>Why Chrome Remote Desktop instead of <code class="docutils literal notranslate"><span class="pre">$OTHER_OPTION</span></code>?<a class="headerlink" href="#why-chrome-remote-desktop-instead-of-other-option" title="Permalink to this headline">¶</a></h2>
+<p>Mostly:</p>
+<ul class="simple">
+<li><p>It works natively on ChromeOS, and works well. It handles hi-dpi displays
+correctly, and passes through keyboard combinations correctly (e.g., it stops
+CTRL-N from opening a new local window).</p></li>
+<li><p>It seems faster than any other remote desktop option I have tried. I don’t know
+technical details, but likely their use of some kind of modified VP9 codec
+has to do with this. When originally writing this I thought it was lossy and pixel
+perfect nonetheless, but I’ve been informed it’s not. At least it was good enough
+to fool me :)</p></li>
+</ul>
+</div>
+<div class="section" id="setup-instructions">
+<h2>Setup instructions<a class="headerlink" href="#setup-instructions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="install-the-package">
+<h3>Install the package<a class="headerlink" href="#install-the-package" title="Permalink to this headline">¶</a></h3>
+<p>Download the package linked from
+<a class="reference external" href="https://support.google.com/chrome/answer/1649523?hl=en">https://support.google.com/chrome/answer/1649523?hl=en</a> and install it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">chrome</span><span class="o">-</span><span class="n">remote</span><span class="o">-</span><span class="n">desktop_current_amd64</span><span class="o">.</span><span class="n">deb</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="o">-</span><span class="n">f</span> <span class="n">install</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="prepare-the-chrome-remote-desktop-group">
+<h3>Prepare the chrome-remote-desktop group<a class="headerlink" href="#prepare-the-chrome-remote-desktop-group" title="Permalink to this headline">¶</a></h3>
+<p>At the time of this writing, the package installer seems to fail to
+create the <code class="docutils literal notranslate"><span class="pre">chrome-remote-desktop</span></code> group, so add it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">groupadd</span> <span class="n">chrome</span><span class="o">-</span><span class="n">remote</span><span class="o">-</span><span class="n">desktop</span>
+</pre></div>
+</div>
+<p>You _may_ need to add yourself to the group (unclear if this happens
+correctly automatically):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>sudo usermod -a -G chrome-remote-desktop $USER
+</pre></div>
+</div>
+</div>
+<div class="section" id="set-up-the-desktop-session">
+<h3>Set up the desktop session<a class="headerlink" href="#set-up-the-desktop-session" title="Permalink to this headline">¶</a></h3>
+<p>If <code class="docutils literal notranslate"><span class="pre">~/.chrome-remote-desktop-session</span></code> is missing or contains bad
+information, the attempt to connect to the remote desktop will fail
+without a clear cause. Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="n">xterm</span> <span class="o">&amp;</span>
+<span class="n">exec</span> <span class="n">i3</span>
+</pre></div>
+</div>
+<p>Unconfirmed whether <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">+x</span></code> is needed.</p>
+</div>
+<div class="section" id="set-up-your-desired-resolution-in-your-shell-profile">
+<h3>Set up your desired resolution in your shell profile<a class="headerlink" href="#set-up-your-desired-resolution-in-your-shell-profile" title="Permalink to this headline">¶</a></h3>
+<p>Wherever your shell profile is, add an appropriate resolution selection:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES</span><span class="o">=</span><span class="mi">1024</span><span class="n">x768</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bootstrap-through-ssh-vnc">
+<h3>Bootstrap through SSH+VNC<a class="headerlink" href="#bootstrap-through-ssh-vnc" title="Permalink to this headline">¶</a></h3>
+<p>On the server:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">vnc4server</span>
+<span class="n">vncpasswd</span>
+<span class="n">vncserver</span>
+
+<span class="c1"># log in remotely and bootstrap chrome (see later)</span>
+
+<span class="n">vncserver</span> <span class="o">-</span><span class="n">kill</span> <span class="p">:</span><span class="mi">1</span>
+</pre></div>
+</div>
+<p>On the client, log into the server using a VNC client over SSH
+forwarding. I.e:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="o">-</span><span class="n">L</span> <span class="mi">5901</span><span class="p">:</span><span class="n">localhost</span><span class="p">:</span><span class="mi">5901</span> <span class="n">username</span><span class="nd">@remotehost</span>
+</pre></div>
+</div>
+<p>And run your preferred VNC client to connect to <code class="docutils literal notranslate"><span class="pre">localhost:5901</span></code>.</p>
+</div>
+<div class="section" id="enable-remote-connections-in-chrome">
+<h3>Enable remote connections in Chrome<a class="headerlink" href="#enable-remote-connections-in-chrome" title="Permalink to this headline">¶</a></h3>
+<p>Start Chrome, install the “Chrome Remote Desktop” app, run it. Under
+“My Computers”, hit “Enable remote connections”.</p>
+<p>Hopefully it should succeed. After this, the session will
+automatically start on boot thanks to the init script, and chrome will
+have directly launched a session for you just now - so you should now
+be able to connect through a CRD client.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">scode/docs</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../hardware/index.html">Hardware</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Software</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Setting up Chrome Remote Desktop on Ubuntu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chrome_tweaks.html">Chrome tweaks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rstquil.html">rstquil: reStructuredText (rst) + sphinx frustration relief</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading lists</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Software</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Software</a></li>
+      <li>Next: <a href="chrome_tweaks.html" title="next chapter">Chrome tweaks</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, scode.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/software/chrome_remote_desktop_ubuntu.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
