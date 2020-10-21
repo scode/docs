@@ -1,7 +1,11 @@
 NETGEAR LB1120 (LTE modem) with Google Fi
 =========================================
 
-As of 2020-10-20, I was able to use the NETGEAR LB1120 with Google Fi, with a data-only SIM.
+As of 2020-10-20, I was able to use the NETGEAR LB1120 with Google Fi,
+with a data-only SIM. The SIM was previously used (as data-only) in a
+phone, so there may have been some historical activation step that
+would be required with a fresh SIM - not sure.
+
 For reliable operation I had to use the APN settings
 `documented by Google <https://support.google.com/fi/answer/6330195?hl=en>`_:
 
