@@ -7,3 +7,4 @@ Hardware
 
    thinkpad_t580_linux
    netgear_lb1120_google_fi
+   roomba_s9_plus
