@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rstquil: reStructuredText (rst) + sphinx frustration relief &#8212; scode/docs  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Reading lists" href="../reading/index.html" />
+    <link rel="prev" title="Chrome tweaks" href="chrome_tweaks.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="rstquil-restructuredtext-rst-sphinx-frustration-relief">
+<h1>rstquil: reStructuredText (rst) + sphinx frustration relief<a class="headerlink" href="#rstquil-restructuredtext-rst-sphinx-frustration-relief" title="Permalink to this headline">¶</a></h1>
+<p>So you’re considering, or even being asked to, adopt <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> and <a class="reference external" href="http://www.sphinx-doc.org/">Sphinx</a> for your documentation needs. You’ve
+done a ton of markdown or possibly asciidoc in the past, but every
+time you try to use reStructuredText for <strong>real</strong>, something
+non-trivial, it instantly becomes painful to get it to do what you
+want and you spend unreasonable amounts of time googling around. This
+is for you.</p>
+<p>Or… so I hope. This is what <em>I</em> would have wanted, based on what <em>I</em>
+consider to be the “obviously immediately important” things I care
+about when writing documentation. Other people’s definition of what is
+“obviously immediately important” may differ, or their points of
+frustration may differ, but this is my best attempt at easing adoption
+for people with similar biases to myself.</p>
+<p>My relevant background is writing technical documentation aimed at
+other software developers in a large organization, and so my needs are
+heavily based on this. Further, while I write a lot of documentation
+for a typical developer, it’s not the <em>only thing that I do</em>. Part of
+the frustration of adoption originally was that I would figure
+something out, and then just about forget it again before the next
+time I sat down and did similar things.</p>
+<p>Some of the terminology here is not formally correct with respect to
+the <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html">reStructuredText spec</a>,
+but rather intended to convey meaning for someone with reasonable
+markup/asciidoc experience (sometimes it may also be because I felt it
+was unclear what correct terminology is).</p>
+<p>Finally, this is <em>not</em> meant to be a complete replacement for other
+documentation. Rather, it’s selectively picking a few topics that I
+believe to be extra important and/or extra likely to cause
+frustration.</p>
+<p>Suggestions/feedback? Feel free to <a class="reference external" href="https://github.com/scode/docs/issues">file a github issue</a>, open a pull request <a class="reference external" href="https://github.com/scode/docs">on
+github</a>, or just email me at
+<code class="docutils literal notranslate"><span class="pre">peter.schuller&#64;infidyne.com</span></code> <a class="footnote-reference brackets" href="#email-not-link" id="id1">1</a>.</p>
+<dl class="footnote brackets">
+<dt class="label" id="email-not-link"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>This would be a link, except I have not been able
+to figure out how to make a <code class="docutils literal notranslate"><span class="pre">mailto:</span></code> link in
+which the <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> sign is not URL encoded in the
+output. Know how to fix that? I’ll add it to
+this guide :)</p>
+</dd>
+</dl>
+<div class="section" id="inline-literals">
+<h2>Inline literals<a class="headerlink" href="#inline-literals" title="Permalink to this headline">¶</a></h2>
+<p>Use <em>double</em> backticks:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>Let me tell you about the <span class="s">``cool_function``</span> function!
+</pre></div>
+</div>
+<p>A single backtick, like you’re used to, may superficially appear to do
+what you want based on rendered output, but <em>actually</em> is for
+<a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#interpreted-text">interpreted text</a>
+which is different.</p>
+</div>
+<div class="section" id="code-blocks-multi-line-literals">
+<h2>Code blocks / multi-line literals<a class="headerlink" href="#code-blocks-multi-line-literals" title="Permalink to this headline">¶</a></h2>
+<p>The simplest way is to end your previous paragraph with a double-colon
+(and don’t forget empty lines for paragraph separation):</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>Here&#39;s an example of foo<span class="se">::</span>
+
+<span class="s">    # example of foo here</span>
+<span class="s">    # continued example of foo</span>
+
+And this is the next paragraph of text.
+</pre></div>
+</div>
+<p>The is actually taking advantage of a convenience feature in
+reStructuredText. The above code-block is equivalent to <em>both</em> of
+these:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>Here&#39;s an example of foo: <span class="se">::</span>
+
+<span class="s">    # example of foo here</span>
+<span class="s">    # continued example of foo</span>
+
+And this is the next paragraph of text.
+</pre></div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>Here&#39;s an example of foo:
+
+<span class="se">::</span>
+
+<span class="s">    # example of foo here</span>
+<span class="s">    # continued example of foo</span>
+
+And this is the next paragraph of text.
+</pre></div>
+</div>
+<p>See the <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#literal-blocks">literal blocks section</a>
+of the spec for more.</p>
+<p>The biggest disadvantage of the form is that it does not allow you to
+specify the language contained in the block of text - which you may
+want to do, for example to enable syntax highlighting. You may
+therefor use this form instead (which appears to be Sphinx specific):</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>Here is an example snippet of Python:
+
+<span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">python</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello world!&#39;</span><span class="p">)</span>
+
+In the above example, we ...
+</pre></div>
+</div>
+<p>See <a class="reference external" href="http://www.sphinx-doc.org/en/stable/markup/code.html">showing code examples</a> in the
+Sphinx docs for more.</p>
+</div>
+<div class="section" id="linking-to-urls">
+<h2>Linking to URLs<a class="headerlink" href="#linking-to-urls" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is for linking to arbitrary URLs. For linking internally in your documentation
+(such as between sections), please see the
+<a class="reference internal" href="#rst-cross-references"><span class="std std-ref">section on cross references</span></a> later on.</p>
+</div>
+<p>The short story is to always use the following form unless you
+specifically know what you’re doing (note the use of <em>two</em> underscores
+at the end, not just one):</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="s">`link text </span><span class="si">&lt;link-url&gt;</span><span class="s">`__</span>
+</pre></div>
+</div>
+<p>For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>Please make sure you foo the bar (such as
+in <span class="s">`this example </span><span class="si">&lt;https://github.com/scode/docs/blob/master/README.md&gt;</span><span class="s">`__</span>).
+</pre></div>
+</div>
+<p>Use of a single underscore (instead of two) will create a <em>named</em>
+hyperlink target. This may appear to work, but you’ll find that you
+start generating warnings over time when you have multiple links with
+the same link text (even if they have different target URLs).</p>
+<p>The seemingly primary use of the <em>single</em> underscore form seems to be
+to allow you to specify the link target separately from the inline
+text. For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>If you want you can look at the <span class="s">`project README`_</span>.
+
+bla bla...
+
+<span class="p">..</span> <span class="nt">_project README:</span> https://github.com/scode/docs/blob/master/README.md
+</pre></div>
+</div>
+<p>See <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#hyperlink-targets">the hyperlink targets section</a>
+of the spec for more information.</p>
+</div>
+<div class="section" id="bulleted-lists">
+<h2>Bulleted lists<a class="headerlink" href="#bulleted-lists" title="Permalink to this headline">¶</a></h2>
+<p>First, a rule of thumb: Always keep an empty line between items in a
+bulleted or numbered list. I cannot tell you what the rules are here,
+but I can tell you it will avoid a ton of frustration trying to
+understand why something isn’t interpreted the way you want. It’s
+unfortunate because it is a strain on the eyes when reading the rst
+source, but I would advice sticking to this rule until you feel like
+you want to really figure out and understand restructured text and are
+prepared to deal with the problems when they arise.</p>
+<p>Second, continuation of an item happens by starting the next line at
+the same column position as the previous line, <em>not</em> counting the list
+markup. The example below illustrates.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">#.</span> Foo, which requires a very long
+   explanation. Notice the indentation of these
+   lines ensuring that these sentences are all part of the
+   same item in the list.
+
+   <span class="m">#.</span> Subfoo 1. Notice the alignment of the hash with the parent item&#39;s body.
+
+   <span class="m">#.</span> Subfoo 2.
+
+<span class="m">#.</span> Bar
+</pre></div>
+</div>
+<p>Bulleted lists are exactly the same in terms of indentation and such,
+but use <code class="docutils literal notranslate"><span class="pre">*</span></code> (and others) instead of hashes:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">*</span> Foo, which requires a very long
+  explanation. Notice the indentation of these
+  lines ensuring that these sentences are all part of the
+  same item in the list.
+
+  <span class="m">*</span> Subfoo 1. Notice the alignment of the hash with the parent item&#39;s body.
+
+  <span class="m">*</span> Subfoo 2.
+
+<span class="m">*</span> Bar
+</pre></div>
+</div>
+<p>For more, see <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#enumerated-lists">enumerated lists</a>
+and <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#bullet-lists">bullet lists</a>
+in the spec.</p>
+</div>
+<div class="section" id="cross-reference-best-practices">
+<span id="rst-cross-references"></span><h2>Cross reference best practices<a class="headerlink" href="#cross-reference-best-practices" title="Permalink to this headline">¶</a></h2>
+<p>One of the very enticing benefits of using Sphinx is that of stable
+cross references that do not break when things move around or sections
+are re-named - provided that best practices are followed (there is
+also support for cross references across projects through <a class="reference external" href="http://www.sphinx-doc.org/en/master/ext/intersphinx.html">intersphinx</a> but I
+have not used it so am not covering it here).</p>
+<p>Let’s assume we have a document with a section on eating apples, and
+it has a label defined (<code class="docutils literal notranslate"><span class="pre">eating-apples</span></code>) for the section:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_eating-apples:</span>
+
+<span class="gh">Eating apples</span>
+<span class="gh">-------------</span>
+</pre></div>
+</div>
+<p>We can now link to it from anywhere in our documentation project like this:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>See <span class="na">:ref:</span><span class="nv">`eating-apples`</span> for more information.
+
+See <span class="na">:ref:</span><span class="nv">`the later section on apples &lt;eating-apples&gt;`</span> for more information.
+</pre></div>
+</div>
+<p>Note how the label is specified with a leading underscore but is
+referred to without it.</p>
+<p>In the former case, the name of the section itself will be used in the
+rendered text. This is not always appropriate because the context of
+the link is different than the context of the section heading itself,
+so you may want to refer to the section by a different name - hence
+the second form.</p>
+<p>The key to get the benefit here is to <em>explicitly</em> define all labels
+that you ever link to. By default, sections will receive an implicit
+label based on their name, but the problem with using those include:</p>
+<ul class="simple">
+<li><p>Links break when section names are tweaked, which defeats a big part of the
+purpose of using cross references.</p></li>
+<li><p>A section without an explicit label fails to signal to the person editing
+the file containing that section, that someone may be linking to the label.</p></li>
+</ul>
+<p>For this reason, I strongly recommend always explicitly labeling
+sections when you decide to link to them. When editing existing
+documentation, you should also assume that explicit labels may be
+linked to and take care to preserve them. It’s an indicator that
+someone cared about it enough to put a label there, and there’s
+probably a link to it somewhere.</p>
+<p>(The previous guidance will obviously not work if you don’t have the
+ability to modify the documentation you’re linking <em>to</em>. I don’t know
+if there’s a solution to that problem.)</p>
+<p>Though I mentioned sections above, labels can be used anywhere and not
+just in front of sections. For example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>Roses are red and violates are blue, here&#39;s a code snippet:
+
+<span class="p">..</span> <span class="nt">_hello-world-snippet:</span>
+
+<span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> python
+
+    print(&#39;Hello!&#39;)
+</pre></div>
+</div>
+</div>
+<div class="section" id="footnotes">
+<h2>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h2>
+<p>The following example demonstrates the use of a named footnote.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>I love eating fruits <span class="s">[#not-all-fruits]_</span>.
+
+<span class="p">..</span> <span class="nt">[#not-all-fruits]</span> Well, most of them.
+</pre></div>
+</div>
+<p>In particular, note the white space preceding the <code class="docutils literal notranslate"><span class="pre">[</span></code> when
+referencing the footnote. This is required.</p>
+<p>For more information, see <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#footnotes">footnotes</a>
+in the rst spec, and the <a class="reference external" href="http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html">basics</a>
+in the sphinx docs.</p>
+</div>
+<div class="section" id="semi-automated-conversion-from-markdown-to-rst">
+<h2>Semi-automated conversion from markdown to rst<a class="headerlink" href="#semi-automated-conversion-from-markdown-to-rst" title="Permalink to this headline">¶</a></h2>
+<p>I’ve found <a class="reference external" href="https://pandoc.org/">pandoc</a> to be quite useful. It
+will <em>not</em> be perfect, but it will take care of most of the simple
+stuff and after the automated conversion you go through and perform
+manual fix-ups. Once you’ve got it installed:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pandoc -f markdown -t rst &lt; file.md &gt; file.rst
+</pre></div>
+</div>
+<p>Then edit as appropriate.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">scode/docs</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../hardware/index.html">Hardware</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Software</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="chrome_remote_desktop_ubuntu.html">Setting up Chrome Remote Desktop on Ubuntu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chrome_tweaks.html">Chrome tweaks</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">rstquil: reStructuredText (rst) + sphinx frustration relief</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading lists</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Software</a><ul>
+      <li>Previous: <a href="chrome_tweaks.html" title="previous chapter">Chrome tweaks</a></li>
+      <li>Next: <a href="../reading/index.html" title="next chapter">Reading lists</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, scode.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/software/rstquil.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
