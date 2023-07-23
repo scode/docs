@@ -2,8 +2,7 @@ name: Deploy
 on:
   push:
     branches:
-      - master
-
+      - '*'
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -23,6 +22,8 @@ jobs:
         echo `pwd`/mdbook >> $GITHUB_PATH
     - name: Deploy GitHub Pages
       run: |
+        gem install mdl
+        mdl src/
         mdbook build
         git worktree add gh-pages
         git config user.name "Deploy from CI"
