@@ -1,6 +1,4 @@
-# Reading lists
-
-## JVM garbage collection
+# JVM garbage collection
 
 * [Uniprocessor Garbage Collection
   Techniques](https://people.cs.umass.edu/~emery/memory/papers/wils94/paper.pdf)
