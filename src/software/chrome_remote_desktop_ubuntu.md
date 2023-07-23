@@ -53,10 +53,10 @@ are part of the `chrome-remote-desktop` Unix group.
 
 Mostly:
 
-- It works natively on ChromeOS, and works well. It handles hi-dpi
+* It works natively on ChromeOS, and works well. It handles hi-dpi
   displays correctly, and passes through keyboard combinations
   correctly (e.g., it stops CTRL-N from opening a new local window).
-- It seems faster than any other remote desktop option I have tried. I
+* It seems faster than any other remote desktop option I have tried. I
   don\'t know technical details, but likely their use of some kind of
   modified VP9 codec has to do with this. When originally writing this
   I thought it was lossy and pixel perfect nonetheless, but I\'ve been

@@ -18,14 +18,14 @@
   generation and it\'s a copying and compacting collector.
 * Azul collectors (these apply to Azul\'s JVM which AFAIK has never
   been freely available).
-    * [The Pauseless GC
-      Algorithm](https://www.usenix.org/legacy/events/vee05/full_papers/p46-click.pdf)
-      describes the theory behing the C4 garbage collector used in the
-      Azul JVMs.
-    * [C4: The Continuously Concurrent Compacting
-      Collector](https://www.azul.com/files/c4_paper_acm2.pdf) is a
-      follow-up paper on the previous one, going into a lot more
-      implementation detail.
+  * [The Pauseless GC
+    Algorithm](https://www.usenix.org/legacy/events/vee05/full_papers/p46-click.pdf)
+    describes the theory behing the C4 garbage collector used in the
+    Azul JVMs.
+  * [C4: The Continuously Concurrent Compacting
+    Collector](https://www.azul.com/files/c4_paper_acm2.pdf) is a
+    follow-up paper on the previous one, going into a lot more
+    implementation detail.
 * Current (2018) \"state of the art\" with respect to GC in freely
   available HotSpot are
   [zgc](https://wiki.openjdk.java.net/display/zgc/Main) and

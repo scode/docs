@@ -11,17 +11,17 @@ for Linux compatibility).
 ## Changelog (significant updates only)
 
 * 2019-11-09
-    * Added note around resume not working w/ external mouse.
+  * Added note around resume not working w/ external mouse.
 * 2018-10-07
-    * Noted upgrading to Ubuntu 18.04.
-    * Updated trackpoint section with decision to use external
+  * Noted upgrading to Ubuntu 18.04.
+  * Updated trackpoint section with decision to use external
       kb/mouse.
 * 2018-07-15
-    * Added more comments on my experience with the trackpoint.
+  * Added more comments on my experience with the trackpoint.
 * 2018-04-08
-    * More information about the webcam.
+  * More information about the webcam.
 * 2018-04-07
-    * Initial version, about 3 weeks or so after receiving the laptop.
+  * Initial version, about 3 weeks or so after receiving the laptop.
 
 ## Ubuntu compatibility
 
@@ -236,50 +236,50 @@ The good news is that overall, Bluetooth works. I did not require any
 tweaks w.r.t. bluetooth drivers or bluez etc (the standard `pair X`,
 `connect X` works), but there are a few quirks/things to keep in mind.
 
--   In order to put the headset into the appropriate mode to get high
-    quality audio, `pacmd set-card-profile N a2dp_sink` (whatever your
-    card `N` is). It appears to be defaulting into a headset profile
-    (where the mic theoretically works, but audio quality is horrible.)
+* In order to put the headset into the appropriate mode to get high
+  quality audio, `pacmd set-card-profile N a2dp_sink` (whatever your
+  card `N` is). It appears to be defaulting into a headset profile
+  (where the mic theoretically works, but audio quality is horrible.)
 
--   Once (but only once so far), a *huge* amount of latency built up; it
-    was on the order of half a second to a second of delay. I \"fixed\"
-    it by restarting my headset.
+* Once (but only once so far), a *huge* amount of latency built up; it
+  was on the order of half a second to a second of delay. I \"fixed\"
+  it by restarting my headset.
 
--   During normal operation, latency is low enough that I don\'t
-    consciously notice anything annoying. That said, I should mention
-    that I haven\'t used this setup to watch a lot of human faces
-    speaking (though I have some).
+* During normal operation, latency is low enough that I don\'t
+  consciously notice anything annoying. That said, I should mention
+  that I haven\'t used this setup to watch a lot of human faces
+  speaking (though I have some).
 
--   Contrary to the behavior on macOS, the PulseAudio volume control
-    does not appear to affect the hardware volume of the headset. I did
-    not find a way to do this through software, but in the case of the
-    Bose QC35 there are physical buttons on the headset to control the
-    hardware volume. The significance of this is that software volume
-    above 100% will cause distortion, and so it is important that 100%
-    is sufficient volume. If you have a bluetooth headset without
-    physical volume buttons, *maybe* this could be a problem. I\'m not
-    sure.
+* Contrary to the behavior on macOS, the PulseAudio volume control
+  does not appear to affect the hardware volume of the headset. I did
+  not find a way to do this through software, but in the case of the
+  Bose QC35 there are physical buttons on the headset to control the
+  hardware volume. The significance of this is that software volume
+  above 100% will cause distortion, and so it is important that 100%
+  is sufficient volume. If you have a bluetooth headset without
+  physical volume buttons, *maybe* this could be a problem. I\'m not
+  sure.
 
--   Most of the time, turning on the Bose headset after having resumed
-    the laptop will either (a) cause it to connect after a couple of
-    seconds, or (b) require me to turn the headset back off and back on
-    again and *then* connect after an additional couple of seconds.
+* Most of the time, turning on the Bose headset after having resumed
+  the laptop will either (a) cause it to connect after a couple of
+  seconds, or (b) require me to turn the headset back off and back on
+  again and *then* connect after an additional couple of seconds.
 
-    I have had a few cases that required more attempts. Once I spent
-    almost 5 minutes restarting the headset, flipping `scan on/scan off`
-    and doing suspend/resumes until it finally started working.
+  I have had a few cases that required more attempts. Once I spent
+  almost 5 minutes restarting the headset, flipping `scan on/scan off`
+  and doing suspend/resumes until it finally started working.
 
-    So TLDR: As usual, Bluetooth pairing/connection is freaking
-    horrible. However, it has been a bit more horrible than I\'m used to
-    with macOS, though not incredibly so. With macOS you have random
-    issues sometimes as well, but the biggest difference is that having
-    to turn the headset on and off an extra time seems to be the common
-    case right now. But at least it\'s mostly consistent.
+  So TLDR: As usual, Bluetooth pairing/connection is freaking
+  horrible. However, it has been a bit more horrible than I\'m used to
+  with macOS, though not incredibly so. With macOS you have random
+  issues sometimes as well, but the biggest difference is that having
+  to turn the headset on and off an extra time seems to be the common
+  case right now. But at least it\'s mostly consistent.
 
-    I am not entirely sure what these issues are correlated with, and
-    whether e.g. suspend/resume cycles make it more likely.
+  I am not entirely sure what these issues are correlated with, and
+  whether e.g. suspend/resume cycles make it more likely.
 
-### Battery
+### Battery {#battery-linux}
 
 It\'s worth nothing that two separate batteries could potentially
 complicate matters from a UI perspective.
