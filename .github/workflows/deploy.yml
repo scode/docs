@@ -20,11 +20,18 @@ jobs:
         mkdir mdbook
         curl -sSL $url | tar -xz --directory=./mdbook
         echo `pwd`/mdbook >> $GITHUB_PATH
-    - name: Deploy GitHub Pages
+    - name: Build (mdbook build)
       run: |
         sudo npm install -g markdownlint-cli
         markdownlint src/
         mdbook build
+    - name: Lint (markdownlint)
+      run: |
+        sudo npm install -g markdownlint-cli
+        markdownlint src/
+          
+    - name: Deploy GitHub Pages
+      run: |
         git worktree add gh-pages
         git config user.name "Deploy from CI"
         git config user.email ""
