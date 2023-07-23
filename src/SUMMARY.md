@@ -10,4 +10,4 @@
   - [Chrome tweaks](./software/chrome_tweaks.md)
   - [rstquil: reStructuredText (rst) + sphinx frustration relief](./software/rstquil.md)
 - [Reading lists](./reading/README.md)
-  - [JVM garbage collection](./reading/jvm_gc.md)
+   - [JVM garbage collection](./reading/jvm_gc.md)
