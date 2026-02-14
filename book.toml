@@ -1,6 +1,5 @@
 [book]
 authors = ["Peter Schuller"]
 language = "en"
-multilingual = false
 src = "src"
 title = "scode/docs"
