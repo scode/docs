@@ -3,3 +3,11 @@ authors = ["Peter Schuller"]
 language = "en"
 src = "src"
 title = "scode/docs"
+
+[build]
+build-dir = "book"
+
+[output.html]
+site-url = "/docs/"
+git-repository-url = "https://github.com/scode/docs"
+edit-url-template = "https://github.com/scode/docs/edit/master/{path}"
