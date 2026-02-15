@@ -1,6 +1,7 @@
 # Summary
 
 - [Introduction](./introduction.md)
+- [Quick facts](./quick_facts.md)
 - [Hardware](./hardware/README.md)
   - [ThinkPad T580 impressions (with Linux)](./hardware/thinkpad_t580_linux.md)
   - [NETGEAR LB1120 (LTE modem) with Google Fi](./hardware/netgear_lb1120_google_fi.md)
