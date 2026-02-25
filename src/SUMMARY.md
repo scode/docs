@@ -13,3 +13,5 @@
   - [rstquil: reStructuredText (rst) + sphinx frustration relief](./software/rstquil.md)
 - [Reading lists](./reading/README.md)
   - [JVM garbage collection](./reading/jvm_gc.md)
+- [Donuts Labs Battery](./donuts_labs_battery/README.md)
+  - [Evidence drip feed](./donuts_labs_battery/evidence_drip_feed.md)
