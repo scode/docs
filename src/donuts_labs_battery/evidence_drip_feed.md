@@ -4,6 +4,8 @@
 
 VTT report: [VTT_CR_00092_26.pdf](20260223_c_rate_heat_test/VTT_CR_00092_26.pdf)
 
+Initially written: Feb 24 2026
+
 My commentary:
 
 - A perfect 11C rate would by definition imply a 5m27s 0-100% charging time.
