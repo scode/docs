@@ -34,3 +34,7 @@ Other concerns:
   in one dimension at a time is vastly less likely/hard than producing a battery that does well in all dimensions at the
   same time. In the next report I want to see VTT explicitly state that they are still testing the same battery unit as
   the earlier tests.
+
+Updates since initial writing:
+
+- https://www.youtube.com/watch?v=3PwEA-tBufI is a good video with a deep analysis.
