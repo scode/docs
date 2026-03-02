@@ -1,5 +1,41 @@
 # Evidence drip feed
 
+## Mar 2 2026 - High Temperature performance
+
+VTT report: [VTT_CR_00124_26.pdf](20260302_high_temp_capacity/VTT_CR_00124_26.pdf)
+
+I was specifically looking for any clear conformation that the cell being tested is the same physical sample as
+participated in the previous test because on top of the individual claims about this battery, it matters more than
+anything else that they can all be achieved by the _exact same battery_ (demonstrating the properties they have claimed
+independently for different units is much less interesting). Quoting from the report:
+
+> The aim of the project was to conduct independent high-temperature discharge performance tests on the energy storage
+> device supplied by the customer, which the customer identified as a solidstate battery cell. Three visually identical
+> cells were provided for testing and labeled DL1, DL2, and DL3. Each cell was subjected to different tests conducted in
+> parallel, all of which began with aninitial capacity test. This report presents the results of the high‑temperature
+> discharge tests performed on cell DL2.
+
+And slightly later:
+
+> All tests described in this report were carried out on the same cell, in accordance with the customer’s test plan.
+
+And in the conclusion:
+
+> This project included an independent high-temperature discharge performance test on an energy storage device supplied
+> by the customer, which the customer identified as a solid-state battery cell.
+
+Given this wording my take is that:
+
+- There is NO explicit confirmation that Donut Labs is not providing a different cell or set of sells for each test.
+- However, the _charitable_ interpretation appears to me to be that that VTT was given 3 cells in total to perform a
+  number of tests - given that they do explicitly say 3 cells in this report, yet also say only one cell was used for
+  tests. The wording around parallel tests also strongly, to me, indicates they are referring to parallel tests that
+  will produce different reports.
+- However, no such wording appears in the previous report.
+- Additionally, this means Donut Labs could have presented VTT with three visually similar but different units. There is
+  no confirmation of weather VTT or Donut Labs prescribed which cell was used for which test. If Donut Labs made that
+  pick, merely presenting the units ahead of time doesn't help the case.
+
 ## Feb 23 2026 - Charging speed
 
 VTT report: [VTT_CR_00092_26.pdf](20260223_c_rate_heat_test/VTT_CR_00092_26.pdf)
