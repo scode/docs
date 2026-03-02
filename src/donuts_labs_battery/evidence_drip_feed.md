@@ -36,6 +36,9 @@ Given this wording my take is that:
   no confirmation of weather VTT or Donut Labs prescribed which cell was used for which test. If Donut Labs made that
   pick, merely presenting the units ahead of time doesn't help the case.
 
+Overall this test seems very clearly aimed at manufacturers who will have have concerns on what kind of cooling is
+required to integrate a battery in their product.
+
 ## Feb 23 2026 - Charging speed
 
 VTT report: [VTT_CR_00092_26.pdf](20260223_c_rate_heat_test/VTT_CR_00092_26.pdf)
