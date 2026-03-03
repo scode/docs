@@ -39,6 +39,10 @@ Given this wording my take is that:
 Overall this test seems very clearly aimed at manufacturers who will have have concerns on what kind of cooling is
 required to integrate a battery in their product.
 
+Updates since initial writing:
+
+- https://www.youtube.com/watch?v=AzIpgYi4rjM - another good Two Bit da Vinci video
+
 ## Feb 23 2026 - Charging speed
 
 VTT report: [VTT_CR_00092_26.pdf](20260223_c_rate_heat_test/VTT_CR_00092_26.pdf)
