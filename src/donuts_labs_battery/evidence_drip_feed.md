@@ -1,5 +1,45 @@
 # Evidence drip feed
 
+## Mar 9 2026 - Self-discharge
+
+VTT report: [VTT_CR_00125_26.pdf](20260309_self_discharge/VTT_CR_00125_26.pdf)
+
+Their [video](https://www.youtube.com/watch?v=77kF5GEnQM8) had this wording:
+
+> As in previous tests, the test starts with the same 1C capacity test to show the cell is exactly the same as our other
+> test articles.
+
+I'm skeptical that simply having a capacity test is sufficient to prove the cells are equivalent, though I'm not a
+battery expert. It's probably a good indication but it doesn't strike me as impossible to artificially produce a similar
+behavior across this one dimension in different kinds of cells. I keep harping on this because the _same cell_
+performing well across all the claimed dimensions is critical to the veracity of the overall claim here.
+
+This time there is, however, a little more clarity in the wording in the VTT report:
+
+> Three visually identical cells were provided for testing and labeled DL1, DL2, and DL3. Each cell was subjected to
+> different tests conducted in parallel, all of which began with an initial capacity test. This report presents the
+> results of the self‑discharge tests performed on cell DL1.
+
+I think this is more explicitly (than in past reports) that there is a single set of three cells provided to VTT for use
+across all the tests that they are trickling results out from.
+
+Note that it still does not tell us whether VTT was instructed which cell to use for which tests, or whether it was up
+to VTT to make that choice.
+
+Regarding the self discharge test, quoting the report:
+
+> Cycle 1: The cell was charged at a constant current of 24 A until a charge throughput of 6.668 Ah was reached,
+> followed by a one‑hour idle period. The cell was then charged again at 24 A to an additional 6.667 Ah, corresponding
+> to a total state of charge of approximately 50 %. Subsequently, a 240-hour idle period at ambient temperature was
+> initiated. During the idle period, the cell voltage was recorded at a sampling interval of 10 s. After the idle
+> period, the cell was discharged at 24 A current until the voltage reached 2.7 V. At the end of the tests, the cell was
+> charged to approximately 25 % state of charge before it was disconnected.
+
+It is unclear to why a 50% state of charge was chosen, and who made that choice. For real life applications it would
+matter a lot if the self discharge rate was much higher at higher states of charge, so I would expect either tests based
+on a very high state of charge or alternatively one at a high level and one at a lower. Because the test only addresses
+50%, it leaves it open that the self discharge rate could be very high at higher states of charge.
+
 ## Mar 2 2026 - High Temperature performance
 
 VTT report: [VTT_CR_00124_26.pdf](20260302_high_temp_capacity/VTT_CR_00124_26.pdf)
