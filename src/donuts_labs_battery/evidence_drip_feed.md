@@ -35,7 +35,7 @@ Regarding the self discharge test, quoting the report:
 > period, the cell was discharged at 24 A current until the voltage reached 2.7 V. At the end of the tests, the cell was
 > charged to approximately 25 % state of charge before it was disconnected.
 
-It is unclear to why a 50% state of charge was chosen, and who made that choice. For real life applications it would
+It is unclear to me why a 50% state of charge was chosen, and who made that choice. For real life applications it would
 matter a lot if the self discharge rate was much higher at higher states of charge, so I would expect either tests based
 on a very high state of charge or alternatively one at a high level and one at a lower. Because the test only addresses
 50%, it leaves it open that the self discharge rate could be very high at higher states of charge.
