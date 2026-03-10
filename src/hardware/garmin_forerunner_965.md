@@ -1,6 +1,6 @@
 # Garmin Forerunner 965
 
-NOTE: This is not a comprehensive review. These are observations as of 2025-02-14 from personal use.
+NOTE: This is not a comprehensive review. These are observations as of 2026-02-14 from personal use.
 
 I have this watch primarily for two things (besides conveniently telling time):
 
@@ -24,3 +24,10 @@ That approach helped, but charging is still flaky and annoying, and it is unclea
 over time.
 
 If you are considering this watch, this charging behavior is a major caveat to understand before purchase.
+
+### Update, 2026-03-09
+
+It won't charge. Despite being extremely careful with the plug and wiping clean with an alcohol pad before every single
+charge.
+
+That's it - bye bye. Never buying or recommending one again.
