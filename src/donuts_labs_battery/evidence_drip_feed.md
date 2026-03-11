@@ -40,6 +40,11 @@ matter a lot if the self discharge rate was much higher at higher states of char
 on a very high state of charge or alternatively one at a high level and one at a lower. Because the test only addresses
 50%, it leaves it open that the self discharge rate could be very high at higher states of charge.
 
+Updates since initial writing:
+
+- https://www.youtube.com/watch?v=nYdYyomuG2M - another good Two Bit da Vinci video. He comes away more convinced than I
+  am that the evidence supports the cells being the same across tests.
+
 ## Mar 2 2026 - High Temperature performance
 
 VTT report: [VTT_CR_00124_26.pdf](20260302_high_temp_capacity/VTT_CR_00124_26.pdf)
