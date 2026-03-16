@@ -1,5 +1,12 @@
 # Evidence drip feed
 
+## Mar 16 2026 - "Fast Charging Solid-State Battery Pack"
+
+Oh come on. A "system validation session with our customer Verge Motorcycles".
+
+I get it. If they really have the goods this is a good way of generating buzz and and PR over time and get some more
+focus on Verge and not just the battery, but sigh.
+
 ## Mar 9 2026 - Self-discharge
 
 VTT report: [VTT_CR_00125_26.pdf](20260309_self_discharge/VTT_CR_00125_26.pdf)
