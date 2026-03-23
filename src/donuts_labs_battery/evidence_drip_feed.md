@@ -1,5 +1,37 @@
 # Evidence drip feed
 
+## Mar 23 2026 - Safety demonstration
+
+VTT report: [VTT_CR_00178_26.pdf](20260323_safety_demonstration/VTT_CR_00178_26.pdf)
+
+The report wording I think is the first time the wording is being crystal clear and explicit that it is testing the same
+cell as in a previous test:
+
+> The tested cell had been subjected to separately reported performance tests prior to this test. In a previous test,
+> the cell had lost its vacuum during the discharge test conducted at 100 °C. The aim of the present 5C cycling test was
+> to assess whether the damaged cell remained functional when subjected to high charge and discharge currents following
+> the loss of vacuum.
+
+For the test:
+
+> In the tests reported herein, cell DL2 was subjected to continuous cycling for 50 cycles at a rate of 5C between 0–90
+> % state of charge (SOC), using the maximum voltage range specified for the cell
+
+Notably the cycling was to 90%, not 100%, with no stated reason. That said, this does seem reasonably if you're trying
+to prove behavior under a high constant C rate (or discharge rate), that you'd avoid the part of the charging curve
+where you would not achieve that C rate.
+
+There is also no stated reason why the choice of 5C instead of attempting to go for 11C or above. Perhaps the reason is
+simply the desire to keep it within a rate that the cell can normally operate at with passive cooling for a cleaner
+outcome. But I wish the reasoning was made explicit.
+
+Back to positive, they also now state:
+
+> The tested cell had been subjected to separately reported performance tests prior to this test. The cell remained
+> under VTT’s control throughout the testing campaign.
+
+Again, finlly being crystal clear and explicit about something previously just left for us to assume.
+
 ## Mar 16 2026 - "Fast Charging Solid-State Battery Pack"
 
 Oh come on. A "system validation session with our customer Verge Motorcycles".
