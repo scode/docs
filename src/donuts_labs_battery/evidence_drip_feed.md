@@ -32,6 +32,10 @@ Back to positive, they also now state:
 
 Again, finlly being crystal clear and explicit about something previously just left for us to assume.
 
+Updates since initial writing:
+
+- https://www.youtube.com/watch?v=vWwPySIm9tU - another good Two Bit da Vinci video
+
 ## Mar 16 2026 - "Fast Charging Solid-State Battery Pack"
 
 Oh come on. A "system validation session with our customer Verge Motorcycles".
