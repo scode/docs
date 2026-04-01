@@ -1,5 +1,9 @@
 # Evidence drip feed
 
+## April 1 2026 - Interview (AKA "we love trolling you all")
+
+Well at least he acknowleged they've been "teasing" :P
+
 ## Mar 23 2026 - Safety demonstration
 
 VTT report: [VTT_CR_00178_26.pdf](20260323_safety_demonstration/VTT_CR_00178_26.pdf)
