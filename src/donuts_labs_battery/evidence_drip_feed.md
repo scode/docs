@@ -4,6 +4,10 @@
 
 Well at least he acknowleged they've been "teasing" :P
 
+Updates since initial writing:
+
+- https://www.youtube.com/watch?v=W0158iGQbRI - another good Two Bit da Vinci video
+
 ## Mar 23 2026 - Safety demonstration
 
 VTT report: [VTT_CR_00178_26.pdf](20260323_safety_demonstration/VTT_CR_00178_26.pdf)
