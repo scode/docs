@@ -1,5 +1,9 @@
 # Evidence drip feed
 
+## April 29 2026 - Swappable Solid-State Battery Demonstration
+
+Did nothing to reveal evidence/data about actual battery claims. No real news.
+
 ## April 15 2026
 
 - Slightly active cooling (fans) in the Verge.
