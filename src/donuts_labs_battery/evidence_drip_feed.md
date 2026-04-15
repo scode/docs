@@ -1,5 +1,12 @@
 # Evidence drip feed
 
+## April 15 2026
+
+- Slightly active cooling (fans) in the Verge.
+- Finally stated explicitly that the charging speed is limited in the bike due to not having a liquid cooled design.
+  Also claiming < 5 min in a typical car with liquid cooling design. (No new evidence.)
+- Claims "very little degradation" across motorcycle life span even every charge at 5C.
+
 ## April 1 2026 - Interview (AKA "we love trolling you all")
 
 Well at least he acknowleged they've been "teasing" :P
