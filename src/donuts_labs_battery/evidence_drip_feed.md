@@ -1,5 +1,14 @@
 # Evidence drip feed
 
+## Jun 3 2026 - Manufacturing and scaling
+
+Video: [Manufacturing & Scaling | I Donut Believe](https://www.youtube.com/watch?v=BjsqMlikxac)
+
+Initially written: Jun 3 2026
+
+- Some of the additional detail is interesting, but it is still just claims. In evidence terms, this was a nothing
+  burger.
+
 ## May 13 2026 - Swelling test
 
 VTT report: [VTT_CustomerReport_Swelling_test.pdf](20260513_swelling_test/VTT_CustomerReport_Swelling_test.pdf)
