@@ -1,5 +1,15 @@
 # Evidence drip feed
 
+## May 13 2026 - Swelling test
+
+VTT report: [VTT_CustomerReport_Swelling_test.pdf](20260513_swelling_test/VTT_CustomerReport_Swelling_test.pdf)
+
+- Why did the test not go beyond 2C, given the claimed capabilities of the battery? They claim this is close to the
+  worst case, but they also claim the battery can go much higher than 2C.
+- It seems unclear (again) whether this is one of the original three cells provided to VTT. They talk about the cell
+  having been through a lot, which someone _can_ interpret as the previously tested cell that swelled. But that is by no
+  means actually clear in either the video or the report.
+
 ## April 29 2026 - Swappable Solid-State Battery Demonstration
 
 Did nothing to reveal evidence/data about actual battery claims. No real news.
