@@ -1,5 +1,18 @@
 # Evidence drip feed
 
+## Jun 8 2026 - Ziroth critique
+
+Video: [Exposing The Solid State Donut Battery. It's Over.](https://www.youtube.com/watch?v=j5oyVNjrUPI)
+
+Initially written: Jun 8 2026
+
+This is not a Donut Lab release entry.
+
+I consider this video highly recommended for anyone following this story, so I wanted to include it here.
+
+I am not treating a YouTube critique as proof by itself. This significantly decreases my priors that the Donut Lab
+claims are legit.
+
 ## Jun 3 2026 - Manufacturing and scaling
 
 Video: [Manufacturing & Scaling | I Donut Believe](https://www.youtube.com/watch?v=BjsqMlikxac)
