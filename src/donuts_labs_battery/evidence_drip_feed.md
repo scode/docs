@@ -1,5 +1,17 @@
 # Evidence drip feed
 
+## Jun 12 2026 - Scrutiny Club response to Ziroth
+
+Article:
+[Investigating the Investigator: Ethics, Disclosure, Conflict of Interest, and the Ziroth–Donut Lab Story](https://www.linkedin.com/pulse/investigating-investigator-ethics-disclosure-zirothdonut-1dz0f/)
+
+This is not a Donut Lab release entry.
+
+Concise summary: the article argues that Ziroth overstated inference as proof, failed to disclose a possible CATL
+conflict, and used an influencer-style fraud narrative before chemical testing or teardown evidence settled the matter.
+Marko Lehtimäki linked to it. The author also discloses that he is a Donut Lab shareholder and close friend of Marko, so
+I read it as an interested counterpoint rather than neutral analysis.
+
 ## Jun 8 2026 - Ziroth critique
 
 Video: [Exposing The Solid State Donut Battery. It's Over.](https://www.youtube.com/watch?v=j5oyVNjrUPI)
