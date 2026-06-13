@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-MDBOOK_VERSION="0.5.2"
+MDBOOK_VERSION="0.5.3"
 MDBOOK_DIR="${HOME}/bin"
 
 mkdir -p "${MDBOOK_DIR}"
