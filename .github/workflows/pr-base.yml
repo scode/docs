@@ -1,0 +1,17 @@
+name: PR Base
+
+on:
+  pull_request:
+
+jobs:
+  require-master-base:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require master as PR base
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          if [ "$BASE_REF" != "master" ]; then
+            echo "PR base must be master, got '$BASE_REF'." >&2
+            exit 1
+          fi
