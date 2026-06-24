@@ -1,5 +1,9 @@
 # Evidence drip feed
 
+## Jun 24 2026
+
+Zero additional evidence presented.
+
 ## Jun 12 2026 - Scrutiny Club response to Ziroth
 
 Article:
