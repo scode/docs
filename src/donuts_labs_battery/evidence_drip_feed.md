@@ -1,5 +1,16 @@
 # Evidence drip feed
 
+## Jul 16 2026 - Bipolar battery demonstration
+
+Video: [Bipolar Cell | I Donut Believe](https://www.youtube.com/watch?v=KRNNsFZKXbo)
+
+Initially written: Jul 16 2026
+
+- Zero evidence. The explanation is interesting if true, but no evidence is provided, so this is still a nothing burger.
+- One notable thing: they say bipolar cells will be delivered to customers "this year." How does this relate to what
+  they were supposed to have already shipped, but have only shipped to internal testers? Is this not the same battery?
+  Unclear.
+
 ## Jun 24 2026
 
 Zero additional evidence presented.
