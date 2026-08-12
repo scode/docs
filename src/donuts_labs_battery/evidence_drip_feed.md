@@ -1,5 +1,9 @@
 # Evidence drip feed
 
+## Aug 12 2026
+
+They pushed the time to the next day.
+
 ## Jul 16 2026 - Bipolar battery demonstration
 
 Video: [Bipolar Cell | I Donut Believe](https://www.youtube.com/watch?v=KRNNsFZKXbo)
