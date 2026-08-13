@@ -1,5 +1,14 @@
 # Evidence drip feed
 
+## Aug 13 2026
+
+Video:
+[Nail Penetration & Bipolar Verification | I Donut Believe (CENSORED)](https://www.youtube.com/watch?v=N657NwiMU0w)
+
+Nothing burger again with respect to evidence. I am not signing an NDA to request evidence. Besides, whatever the
+evidence is, I highly doubt it will include proof that the cell undergoing nail penetration testing is the same cell
+that satisfies the other claims.
+
 ## Aug 12 2026
 
 They pushed the time to the next day.
