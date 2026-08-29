@@ -1,5 +1,21 @@
 # Evidence drip feed
 
+## Aug 29 2026
+
+Video: [Nail Penetration and Bipolar Verification | I Donut Believe](https://www.youtube.com/watch?v=j0aIraoXyCY)
+
+Intertek reports:
+[bipolar verification](https://pub-ae7ee67e17294c90b38b05557a8e7251.r2.dev/Bipolar%20Test%20-%202608094STO.pdf) and
+[nail penetration](https://pub-f6dcd0f3c0d248f38796299129e5f8f0.r2.dev/Nail%20Penetration%20Test%20-%202260670KAU.pdf)
+
+I did not bother doing more than sifting the reports. The reason is that there is no evidence presented that the cell
+being tested is actually _the same cell_ (or kind of cell) that other independent tests looked at. It continues the
+pattern of presenting evidence for specific narrow claims which, even if they are often really good for any battery
+(nail penetration being safe is great), it does not add up to proving that _a single cell_ has all the various
+properties at the same time.
+
+So, not going deeper yet. It's just not worth the effort.
+
 ## Aug 13 2026
 
 Video:
