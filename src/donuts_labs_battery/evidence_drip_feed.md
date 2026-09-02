@@ -1,5 +1,33 @@
 # Evidence drip feed
 
+## Sep 2 2026 - Energy density
+
+Video: [Energy Density Test | I Donut Believe](https://www.youtube.com/watch?v=HZkLM2SoZXI)
+
+VTT report:
+[VTT_CR_00391_26_Energy_Density_Test.pdf](20260902_energy_density_test/VTT_CR_00391_26_Energy_Density_Test.pdf)
+([original](https://pub-01c7ea9972fc472b971b53522518cfc0.r2.dev/VTT-CR-00391-26%5FEnergy%5FDensity%5FTest.pdf))
+
+Initially written: Sep 2 2026
+
+What the report says: one cell, designated DL6 and described as "Donut Battery V1.5", was weighed, measured, and
+discharged at 0.1C at +25 °C. The result was 409.3 Wh/kg and 804.7 Wh/L. That's it; it is a 6 page report and the test
+was "carried out in accordance with the customer's test plan".
+
+The cell is not the one previously tested. The report is explicit about this: "The provided cell was an energy-optimised
+variant of the V1 cell previously tested at VTT and was designated V1.5 to distinguish it from the earlier cell type."
+The cell specification in the report is "as provided by the customer".
+
+Claims made in the video without evidence:
+
+- The V1.5 cell is "exactly the same chemistry as all the other gen 1 cells we have previously tested with VTT, and it's
+  the same form factor, it's just optimized for higher energy density." Nothing in the report supports this beyond the
+  customer-provided designation.
+- The >400 Wh/kg energy density numbers were "always for gen 2 to prove".
+
+General impression: more "string us along" vibes. They are trying to shift focus to gen 2 while still not having
+delivered end to end evidence that a single gen 1 cell has all the claimed properties at the same time.
+
 ## Aug 29 2026
 
 Video: [Nail Penetration and Bipolar Verification | I Donut Believe](https://www.youtube.com/watch?v=j0aIraoXyCY)
