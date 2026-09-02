@@ -32,9 +32,10 @@ delivered end to end evidence that a single gen 1 cell has all the claimed prope
 
 Video: [Nail Penetration and Bipolar Verification | I Donut Believe](https://www.youtube.com/watch?v=j0aIraoXyCY)
 
-Intertek reports:
-[bipolar verification](https://pub-ae7ee67e17294c90b38b05557a8e7251.r2.dev/Bipolar%20Test%20-%202608094STO.pdf) and
-[nail penetration](https://pub-f6dcd0f3c0d248f38796299129e5f8f0.r2.dev/Nail%20Penetration%20Test%20-%202260670KAU.pdf)
+Intertek reports: [bipolar verification](20260829_intertek_nail_bipolar/Bipolar_Test_2608094STO.pdf)
+([original](https://pub-ae7ee67e17294c90b38b05557a8e7251.r2.dev/Bipolar%20Test%20-%202608094STO.pdf)) and
+[nail penetration](20260829_intertek_nail_bipolar/Nail_Penetration_Test_2260670KAU.pdf)
+([original](https://pub-f6dcd0f3c0d248f38796299129e5f8f0.r2.dev/Nail%20Penetration%20Test%20-%202260670KAU.pdf))
 
 I did not bother doing more than sifting the reports. The reason is that there is no evidence presented that the cell
 being tested is actually _the same cell_ (or kind of cell) that other independent tests looked at. It continues the
