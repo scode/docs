@@ -1,5 +1,20 @@
 # Evidence drip feed
 
+## Sep 23 2026 - Elemental analysis
+
+Video: [Elemental Analysis | I Donut Believe](https://www.youtube.com/watch?v=T-JSvEoH-58)
+
+Intertek report: [IWTN-W000020339RLM002.pdf](20260923_elemental_analysis/IWTN-W000020339RLM002.pdf)
+([original](https://pub-3f15a9a74c904192ade59d264aec1584.r2.dev/IWTN-W000020339RLM002.pdf))
+
+- The report says: “The samples are identified by Intertek to be the same as referenced in Intertek report –
+  2608094STO-003.”
+- It's good that Intertek identifies this as the same sample from its earlier
+  [bipolar architecture report](20260829_intertek_nail_bipolar/Bipolar_Test_2608094STO.pdf). But that does not link the
+  sample to any of the other performance tests. A sample with little lithium or sodium that survived nail penetration
+  and has a structure consistent with a bipolar design is not, by itself, evidence that a functioning battery cell has
+  the various claimed properties. The big-picture gap in evidence remains.
+
 ## Sep 2 2026 - Energy density
 
 Video: [Energy Density Test | I Donut Believe](https://www.youtube.com/watch?v=HZkLM2SoZXI)
