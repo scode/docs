@@ -1,5 +1,16 @@
 # Evidence drip feed
 
+## Oct 21 2026 - Low temperature performance
+
+Video: [Low Temp Performance Test | I Donut Believe](https://www.youtube.com/watch?v=V6i5eVwtHP4)
+
+VTT report: [VTT_CR_00467_26_signed.pdf](20261021_low_temp_performance/VTT_CR_00467_26_signed.pdf)
+([original](https://pub-e32e58729529482dbc4a8b9f7938ca50.r2.dev/VTT_CR_00467_26_signed.pdf))
+
+Not worth detailed commentary. Same story - individually interesting if this had been the first few weeks, but at this
+point I am just waiting for something to ship or independent testing of several of claimed properties at the same time
+in the same device.
+
 ## Sep 23 2026 - Elemental analysis
 
 Video: [Elemental Analysis | I Donut Believe](https://www.youtube.com/watch?v=T-JSvEoH-58)
